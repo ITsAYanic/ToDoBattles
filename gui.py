@@ -1,13 +1,14 @@
 from tkinter import *;
-from tkinter import ttk;
+import tkinter as tk;
 
-
+def kill():
+    print("I FUCKING WORK!")
 
 root = Tk()
-frm = ttk.Frame(root, padding=10)
-frm.grid()
-ttk.Label(frm, text="Hello World").grid(column=0, row=0)
-ttk.Button(frm, text="I'm a button").grid(column=1, row=0)
-root.mainloop()
+frm = tk.Frame(root).pack()
+label = tk.Label(root, text="Do I work?").pack()
+button = tk.Button(frm, text="I'm a button", command=kill).pack()
 
+
+root.mainloop()
 
