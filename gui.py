@@ -6,9 +6,14 @@ def kill():
 
 root = Tk()
 frm = tk.Frame(root).pack()
-label = tk.Label(root, text="Do I work?").pack()
-button = tk.Button(frm, text="I'm a button", command=kill).pack()
-
-
+label = tk.Label(root, text="Do I work?")
+label.pack()
+button = tk.Button(root, text="I'm a button", command=kill)
+checkbutton = tk.Checkbutton(root)
+input_field = tk.Entry(root)
+input_field.pack()
+checkbutton.pack()
+button.pack()
+label.pack()
 root.mainloop()
 
